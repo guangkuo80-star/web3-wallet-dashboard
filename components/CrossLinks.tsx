@@ -18,9 +18,9 @@ export default function CrossLinks() {
         Part of a connected set
       </h2>
       <p className="mb-5 text-sm text-white/55">
-        These demos share one wallet, one design system and one Sepolia
-        testnet. Mint in the gallery → see it here → browse everything from the
-        portfolio hub.
+        This dashboard and the NFT Gallery are built as a pair: same wallet,
+        same look, both on Sepolia. Mint in the gallery and the tokens show up
+        here; the Portfolio site links the two together.
       </p>
 
       <div className="grid gap-3 sm:grid-cols-3">

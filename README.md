@@ -12,6 +12,17 @@ Mint an NFT in the gallery and it shows up here automatically.
 
 ---
 
+## Live links
+
+| What | Where |
+| --- | --- |
+| 🌐 Live demo | https://web3-wallet-dashboard-xi.vercel.app |
+| 💻 Source | https://github.com/guangkuo80-star/web3-wallet-dashboard |
+| 🎨 NFT Gallery (companion) | https://web3-nft-gallery.vercel.app |
+| 🏠 Portfolio hub | https://web3-portfolio-pied.vercel.app |
+
+---
+
 ## Tech stack
 
 - **Next.js 15** (App Router) + **React 19** + **TypeScript** (strict)

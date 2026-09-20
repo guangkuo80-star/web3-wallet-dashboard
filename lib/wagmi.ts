@@ -9,7 +9,7 @@ const projectId =
   "1b6c6cfb7b1d0f5a2f62a6dfe2e43105";
 
 const sepoliaRpc =
-  process.env.NEXT_PUBLIC_SEPOLIA_RPC_URL ??
+  process.env.NEXT_PUBLIC_SEPOLIA_RPC_URL?.trim() ||
   "https://ethereum-sepolia-rpc.publicnode.com";
 
 export const config = getDefaultConfig({
@@ -29,7 +29,9 @@ export const config = getDefaultConfig({
  * the NFTs minted there — the two demos cross-reference each other.
  */
 export const NFT_CONTRACT_ADDRESS =
-  (process.env.NEXT_PUBLIC_NFT_CONTRACT_ADDRESS as `0x${string}` | undefined) ??
+  (process.env.NEXT_PUBLIC_NFT_CONTRACT_ADDRESS?.trim() as
+    | `0x${string}`
+    | undefined) ||
   ("0x0000000000000000000000000000000000000000" as `0x${string}`);
 
 export const IS_NFT_CONFIGURED =
@@ -42,9 +44,9 @@ export const ETHERSCAN_API_KEY =
 /** Cross-demo URLs (populated from env, fall back to local dev ports). */
 export const DEMO_LINKS = {
   portfolio:
-    process.env.NEXT_PUBLIC_DEMO_PORTFOLIO ??
+    process.env.NEXT_PUBLIC_DEMO_PORTFOLIO?.trim() ||
     "https://web3-portfolio-pied.vercel.app",
   nftGallery:
-    process.env.NEXT_PUBLIC_DEMO_NFT_GALLERY ??
+    process.env.NEXT_PUBLIC_DEMO_NFT_GALLERY?.trim() ||
     "https://web3-nft-gallery.vercel.app",
 };

@@ -1,8 +1,11 @@
 const portfolio =
-  process.env.NEXT_PUBLIC_DEMO_PORTFOLIO ?? "http://localhost:3000";
+  process.env.NEXT_PUBLIC_DEMO_PORTFOLIO?.trim() ||
+  "https://web3-portfolio-pied.vercel.app";
 const gallery =
-  process.env.NEXT_PUBLIC_DEMO_NFT_GALLERY ?? "http://localhost:3002";
-const gh = process.env.NEXT_PUBLIC_GITHUB_USERNAME ?? "your-github-username";
+  process.env.NEXT_PUBLIC_DEMO_NFT_GALLERY?.trim() ||
+  "https://web3-nft-gallery.vercel.app";
+const gh =
+  process.env.NEXT_PUBLIC_GITHUB_USERNAME?.trim() || "guangkuo80-star";
 
 /**
  * Cross-demo navigation — ties this dashboard back to the rest of the

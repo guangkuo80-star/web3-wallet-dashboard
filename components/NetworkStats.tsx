@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const RPC =
-  process.env.NEXT_PUBLIC_SEPOLIA_RPC_URL ??
+  process.env.NEXT_PUBLIC_SEPOLIA_RPC_URL?.trim() ||
   "https://ethereum-sepolia-rpc.publicnode.com";
 
 type Stats = {

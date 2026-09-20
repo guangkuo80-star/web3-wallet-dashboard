@@ -40,6 +40,10 @@ export const ETHERSCAN_API_KEY =
 
 /** Cross-demo URLs (populated from env, fall back to local dev ports). */
 export const DEMO_LINKS = {
-  portfolio: process.env.NEXT_PUBLIC_DEMO_PORTFOLIO ?? "http://localhost:3000",
-  nftGallery: process.env.NEXT_PUBLIC_DEMO_NFT_GALLERY ?? "http://localhost:3002",
+  portfolio:
+    process.env.NEXT_PUBLIC_DEMO_PORTFOLIO ??
+    "https://web3-portfolio-pied.vercel.app",
+  nftGallery:
+    process.env.NEXT_PUBLIC_DEMO_NFT_GALLERY ??
+    "https://web3-nft-gallery.vercel.app",
 };
